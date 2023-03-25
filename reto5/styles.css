@@ -1,0 +1,185 @@
+:root{
+    --main-white:#f0f0f0;
+    --main-red:#be3144;
+    --main-blue:#45567d;
+    --main-gray:#303841;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--main-red);
+    z-index: 1;
+}
+
+#navbar ul, a{
+    color: var(--main-white);
+    text-decoration: none;
+    list-style: none;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+#navbar ul{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 2rem;
+}
+
+#navbar a{
+    display: block;
+    padding: 1.5rem;
+}
+
+#navbar a:hover{
+    background-color: var(--main-blue);
+}
+
+/* first section */
+
+#welcome-section{
+    width: 100%;
+    height: 100Vh;
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-gray);
+}
+
+
+#welcome-section :nth-child(1){
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#welcome-section :nth-child(2){
+    font-size: 3rem;
+    color: var(--main-red);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* second section */
+
+#projects{
+    background-color: var(--main-blue);
+    padding: 4rem 0rem;
+}
+
+#projects h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: var(--main-white);
+    margin: 0;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.img-articles{
+    width: 100%;
+    height: calc(100% - 4rem);
+}
+
+#view-projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    width: 85%;
+    margin: auto;
+}
+
+.project-tile{
+    background-color: var(--main-gray);
+    height: 100%;
+    text-align: center;
+    font-size: large;
+}
+
+.project-tile p{
+    margin: 0.2rem;
+}
+
+.project-tile span{
+    color: var(--main-white);
+}
+
+.project-tile:hover span{
+    color: var(--main-red);
+}
+
+#projects button{
+    display: block;
+    width: 8rem;
+    margin: 2rem auto;
+    padding: 0.8rem;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+/* 3erd section */
+
+#works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-gray);
+    margin: 0;
+    color: var(--main-white);
+    text-align: center;
+    height: 80vh;
+
+    border-bottom: 0.8rem solid var(--main-red);
+}
+
+#works :nth-child(1) h2{
+    font-size: 4rem;
+    margin-bottom: 0;   
+}
+
+#works :nth-child(1) p{
+    font-size: 1.2rem;
+    margin-top: 0;   
+}
+
+#works :nth-child(2) ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    padding: 0.5rem;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    footer {
+      background-color: var(--main-red);
+    }
+  }

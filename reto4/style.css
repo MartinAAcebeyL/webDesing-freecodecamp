@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding-top: 2rem;
+}
+
+#content{
+    display: flex;
+}
+
+a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 0.5rem;
+    width: 20%;
+    padding-top: 2rem;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar header{
+    font-size: xx-large;
+    font-weight: 200;
+    text-align: center;
+}
+
+.nav-link{
+    padding: 0.5rem;
+    font-size: large;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+}
+
+#main-doc{
+    width: 100%;
+    padding-left: 22%;
+}
+
+.main-section header{
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 1.2rem;
+}
+
+.main-section p{
+    font-size: larger;
+    padding-left: 0.5rem;
+}
+
+.main-section li{
+    font-size: large;
+    margin-left: 1rem;
+}
+
+.main-section code{
+    padding: 0.5rem 1rem;
+    margin: 0.8rem;
+    background-color: aliceblue;
+    display: block;
+    width: 100%;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
